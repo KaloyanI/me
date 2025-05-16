@@ -135,8 +135,8 @@ const SkillsSection = () => {
           <h3 className="text-xl font-medium mb-6">Technologies I've worked with</h3>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 opacity-70">
             {[
-              "React", "TypeScript", "Next.js", "Node.js", "Tailwind CSS", 
-              "MongoDB", "Redux", "GraphQL", "Firebase", "AWS",
+              "Laravel", "Caching", "Redis", "Node.js", "Tailwind CSS", 
+              "MongoDB", "GraphQL", "React", "AWS",
               "Docker", "GitHub", "Figma"
             ].map((tech) => (
               <div key={tech} className="px-4 py-2 bg-muted rounded-lg text-sm">

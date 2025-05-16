@@ -49,7 +49,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/KaloyanI" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
@@ -59,7 +59,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/kaloyan-ivanov-b17833194/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
@@ -67,16 +67,7 @@ const Footer = () => {
                     LinkedIn <ArrowUpRight className="h-3 w-3" />
                   </a>
                 </li>
-                <li>
-                  <a 
-                    href="https://twitter.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
-                  >
-                    Twitter <ArrowUpRight className="h-3 w-3" />
-                  </a>
-                </li>
+               
               </ul>
             </div>
           </div>
@@ -84,12 +75,12 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Alex Dev. All rights reserved.
+            © {currentYear} aveKOKO Dev. All rights reserved.
           </p>
           
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a 
-              href="https://github.com" 
+              href="https://github.com/KaloyanI" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -97,21 +88,14 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/kaloyan-ivanov-b17833194/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <LinkedinIcon className="h-5 w-5" />
             </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <TwitterIcon className="h-5 w-5" />
-            </a>
+           
           </div>
         </div>
       </div>

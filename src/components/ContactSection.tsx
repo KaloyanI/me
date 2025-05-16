@@ -136,8 +136,8 @@ const ContactSection = () => {
                   <Mail className="h-5 w-5 mr-4 text-primary" />
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <a href="mailto:alex@example.com" className="text-muted-foreground hover:text-foreground transition-colors">
-                      alex@example.com
+                    <a href="mailto:info@avekoko.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                      info@avekoko.com
                     </a>
                   </div>
                 </div>
@@ -146,8 +146,8 @@ const ContactSection = () => {
                   <Phone className="h-5 w-5 mr-4 text-primary" />
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <a href="tel:+1234567890" className="text-muted-foreground hover:text-foreground transition-colors">
-                      +1 (234) 567-890
+                    <a href="tel:+359888320606" className="text-muted-foreground hover:text-foreground transition-colors">
+                      +359 888 32 06 06
                     </a>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium">Location</h4>
                     <p className="text-muted-foreground">
-                      San Francisco, California, USA
+                      Burgas, Bulgaria
                     </p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const ContactSection = () => {
             <div className="mt-12 p-6 bg-primary/10 rounded-lg border border-primary/20">
               <h4 className="font-semibold mb-2">Availability</h4>
               <p className="mb-4">
-                I'm currently available for freelance work and new opportunities.
+                I'm currently available for full-time remote work.
               </p>
               <div className="flex items-center">
                 <span className="relative flex h-3 w-3 mr-2">

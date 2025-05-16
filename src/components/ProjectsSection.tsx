@@ -21,7 +21,7 @@ const projects = [
     title: 'Task Management App',
     description: 'A productivity app for managing tasks, projects, and deadlines with a drag-and-drop interface.',
     image: 'https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['React', 'Redux', 'Firebase', 'Tailwind CSS'],
+    tags: ['Laravel', 'Redis', 'GraphQL', 'React', 'AWS'],
     liveUrl: 'https://example.com',
     repoUrl: 'https://github.com',
     date: 'April 2024',

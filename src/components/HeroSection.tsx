@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = 'Frontend Developer';
+  const fullText = 'Full Stack Developer';
   
   useEffect(() => {
     if (typedText.length < fullText.length) {
@@ -36,7 +36,7 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-            Hi, I'm <span className="text-primary">Alex Dev</span>
+            Hi, I'm <span className="text-primary">aveKOKO</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">
@@ -66,7 +66,7 @@ const HeroSection = () => {
           {/* Social links */}
           <div className="flex gap-4 justify-center md:justify-start mb-16">
             <a 
-              href="https://github.com" 
+              href="https://github.com/kaloyanI" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-secondary/10 p-2 rounded-full hover:bg-secondary/20 transition-colors"
@@ -74,21 +74,14 @@ const HeroSection = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/kaloyan-ivanov-b17833194/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-secondary/10 p-2 rounded-full hover:bg-secondary/20 transition-colors"
             >
               <LinkedinIcon className="h-5 w-5" />
             </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-secondary/10 p-2 rounded-full hover:bg-secondary/20 transition-colors"
-            >
-              <TwitterIcon className="h-5 w-5" />
-            </a>
+           
           </div>
         </div>
       </div>
