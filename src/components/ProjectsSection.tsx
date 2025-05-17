@@ -8,63 +8,120 @@ import { cn } from '@/lib/utils';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce site with cart functionality, user authentication, and payment processing.',
-    image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    liveUrl: 'https://example.com',
+    title: 'MegaParts',
+    description: 'E-commerce platform for auto parts with extensive inventory management, user accounts, and online purchasing capabilities.',
+    image: '/sites/megaparts.bg.png',
+    tags: ['Laravel', 'MySQL', 'JavaScript', 'Responsive Design'],
+    liveUrl: 'https://megaparts.bg',
     repoUrl: 'https://github.com',
-    date: 'June 2024',
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'A productivity app for managing tasks, projects, and deadlines with a drag-and-drop interface.',
-    image: 'https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Laravel', 'Redis', 'GraphQL', 'React', 'AWS'],
-    liveUrl: 'https://example.com',
+    title: 'MegaBitak',
+    description: 'Online marketplace for used items with user listings, search functionality, and messaging system.',
+    image: '/sites/megabitak.bg.png',
+    tags: ['PHP', 'MySQL', 'jQuery', 'Bootstrap'],
+    liveUrl: 'https://megabitak.bg',
     repoUrl: 'https://github.com',
-    date: 'April 2024',
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'A weather application showing current conditions and forecasts using data from multiple APIs.',
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['JavaScript', 'API Integration', 'Chart.js', 'CSS Grid'],
-    liveUrl: 'https://example.com',
+    title: 'MegaCars',
+    description: 'Vehicle marketplace with advanced search filters, listing management, and dealer integration.',
+    image: '/sites/megacars.bg.png',
+    tags: ['Laravel', 'Vue.js', 'MySQL', 'REST API'],
+    liveUrl: 'https://megacars.bg',
     repoUrl: 'https://github.com',
-    date: 'March 2024',
   },
   {
     id: 4,
-    title: 'Social Media Dashboard',
-    description: 'An analytics dashboard for social media managers to track engagement across multiple platforms.',
-    image: 'https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Next.js', 'TypeScript', 'GraphQL', 'Material UI'],
-    liveUrl: 'https://example.com',
+    title: 'Accounts MegaParts',
+    description: 'User account management system for MegaParts with authentication, profiles, and order history.',
+    image: '/sites/accounts.megaparts.bg.png',
+    tags: ['PHP', 'MySQL', 'JavaScript', 'JWT'],
+    liveUrl: 'https://accounts.megaparts.bg',
     repoUrl: 'https://github.com',
-    date: 'January 2024',
   },
   {
     id: 5,
-    title: 'Fitness Tracker',
-    description: 'A mobile-responsive application for tracking workouts, nutrition, and health metrics.',
-    image: 'https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['React Native', 'Expo', 'AWS Amplify', 'DynamoDB'],
-    liveUrl: 'https://example.com',
+    title: 'Godzila',
+    description: 'E-commerce website for electronics and tech gadgets with advanced filtering and recommendation system.',
+    image: '/sites/godzila.bg.png',
+    tags: ['Laravel', 'Vue.js', 'MySQL', 'Redis'],
+    liveUrl: 'https://godzila.bg',
     repoUrl: 'https://github.com',
-    date: 'December 2023',
   },
   {
     id: 6,
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website showcasing my work, skills, and experiences with a modern design.',
-    image: 'https://images.pexels.com/photos/2173508/pexels-photo-2173508.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    liveUrl: 'https://example.com',
+    title: 'MyFlat',
+    description: 'Real estate platform for listing, searching, and booking properties with interactive maps and filters.',
+    image: '/sites/myflat.bg.png',
+    tags: ['PHP', 'MySQL', 'JavaScript', 'Google Maps API'],
+    liveUrl: 'https://myflat.bg',
     repoUrl: 'https://github.com',
-    date: 'October 2023',
+  },
+  {
+    id: 7,
+    title: 'KeyBind',
+    description: 'Gaming platform with user profiles, game integration, and performance tracking features.',
+    image: '/sites/keybind.gg.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+    liveUrl: 'https://keybind.gg',
+    repoUrl: 'https://github.com',
+  },
+  {
+    id: 8,
+    title: 'LabCoin App',
+    description: 'Digital wallet and cryptocurrency management application with secure transactions and real-time updates.',
+    image: '/sites/app.labcoin.bg.png',
+    tags: ['React', 'Node.js', 'Blockchain', 'API Integration'],
+    liveUrl: 'https://app.labcoin.bg',
+    repoUrl: 'https://github.com',
+  },
+  {
+    id: 9,
+    title: 'JUP',
+    description: 'Educational platform for schools and universities with course management and student tracking capabilities.',
+    image: '/sites/jup.bg.png',
+    tags: ['Laravel', 'MySQL', 'JavaScript', 'WebSockets'],
+    liveUrl: 'https://jup.bg',
+    repoUrl: 'https://github.com',
+  },
+  {
+    id: 10,
+    title: 'Catering CCC',
+    description: 'Food ordering and catering management system with menu customization and event planning features.',
+    image: '/sites/catering.ccc.bg.png',
+    tags: ['PHP', 'MySQL', 'jQuery', 'Bootstrap'],
+    liveUrl: 'https://catering.ccc.bg',
+    repoUrl: 'https://github.com',
+  },
+  {
+    id: 11,
+    title: 'P2Prevention',
+    description: 'Healthcare platform focused on preventive medicine with patient records and appointment scheduling.',
+    image: '/sites/p2prevention.bg.png',
+    tags: ['Laravel', 'MySQL', 'Vue.js', 'API Integration'],
+    liveUrl: 'https://p2prevention.bg',
+    repoUrl: 'https://github.com',
+  },
+  {
+    id: 12,
+    title: 'BGDetailing',
+    description: 'Automotive detailing service website with booking system, gallery, and service management.',
+    image: '/sites/bgdetailing.com.png',
+    tags: ['WordPress', 'PHP', 'JavaScript', 'WooCommerce'],
+    liveUrl: 'https://bgdetailing.com',
+    repoUrl: 'https://github.com',
+  },
+  {
+    id: 13,
+    title: 'Ideogen',
+    description: 'Creative agency website showcasing portfolio, services, and client testimonials with modern design.',
+    image: '/sites/ideogen.com.png',
+    tags: ['React', 'Next.js', 'GSAP', 'Tailwind CSS'],
+    liveUrl: 'https://ideogen.com',
+    repoUrl: 'https://github.com',
   },
 ];
 
@@ -78,6 +135,11 @@ const websites = [
   { id: 6, name: 'godzila.bg', url: 'https://godzila.bg' },
   { id: 7, name: 'keybind.gg', url: 'https://keybind.gg' },
   { id: 8, name: 'myflat.bg', url: 'https://myflat.bg' },
+  { id: 9, name: 'megacars.bg', url: 'https://megacars.bg' },
+  { id: 10, name: 'p2prevention.bg', url: 'https://p2prevention.bg' },
+  { id: 11, name: 'ideogen.com', url: 'https://ideogen.com' },
+  { id: 12, name: 'jup.bg', url: 'https://jup.bg' },
+  { id: 13, name: 'bgdetailing.com', url: 'https://bgdetailing.com' },
 ];
 
 // Project filter categories
@@ -137,8 +199,10 @@ const ProjectsSection = () => {
                   <CardTitle className="text-xl">{project.title}</CardTitle>
                 </div>
                 <div className="flex items-center text-sm text-muted-foreground">
+                  {/*
                   <Calendar className="h-4 w-4 mr-1" />
                   {project.date}
+                  */}
                 </div>
               </CardHeader>
               <CardContent>
@@ -153,6 +217,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
               </CardContent>
+              {/*}
               <CardFooter className="flex justify-between gap-4">
                 <a 
                   href={project.repoUrl} 
@@ -170,7 +235,7 @@ const ProjectsSection = () => {
                 >
                   <ExternalLink className="h-4 w-4 mr-1" /> Live Demo
                 </a>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           ))}
         </div>
