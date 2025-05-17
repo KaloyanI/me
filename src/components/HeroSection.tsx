@@ -17,7 +17,7 @@ const HeroSection = () => {
   }, [typedText, fullText]);
 
   return (
-    <section id="home" className="min-h-screen pt-20 relative overflow-hidden">
+    <section id="home" className="pt-20 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background/50 -z-10" />
       
