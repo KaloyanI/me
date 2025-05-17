@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, LinkedinIcon, TwitterIcon } from 'lucide-react';
+import { ArrowDown, Github, LinkedinIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const HeroSection = () => {

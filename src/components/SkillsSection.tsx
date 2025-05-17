@@ -38,10 +38,10 @@ const skillsData = {
     { name: "Docker", level: 75, icon: "🐳" },
     { name: "Figma", level: 80, icon: "🎨" },
     { name: "DigitalOcean", level: 75, icon: "🐳" },
-    { name: "Redis", level: 75, icon: "🐳" },
-    { name: "ElasticSearch", level: 75, icon: "🐳" },
-    { name: "Cloudflare", level: 75, icon: "🐳" },
-    { name: "AI Master", level: 90, icon: "🤖" }
+    { name: "Redis", level: 75, icon: "🟢" },
+    { name: "ElasticSearch", level: 75, icon: "🟢" },
+    { name: "Cloudflare", level: 75, icon: "🟢" },
+    { name: "AI Master - ChatGPT, Gemini, Claude, Cursor, Copilot", level: 90, icon: "🤖" }
   ]
 };
 
@@ -143,7 +143,7 @@ const SkillsSection = () => {
           </Tabs>
         </div>
         
-        {/* Tech logos cloud */}
+        {/* Tech logos cloud 
         <div className="mt-16 text-center">
           <h3 className="text-xl font-medium mb-6">Technologies I've worked with</h3>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 opacity-70">
@@ -158,6 +158,7 @@ const SkillsSection = () => {
             ))}
           </div>
         </div>
+        */}
       </div>
     </section>
   );
