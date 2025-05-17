@@ -68,6 +68,18 @@ const projects = [
   },
 ];
 
+// Website list data
+const websites = [
+  { id: 1, name: 'megaparts.bg', url: 'https://megaparts.bg' },
+  { id: 2, name: 'megabitak.bg', url: 'https://megabitak.bg' },
+  { id: 3, name: 'accounts.megaparts.bg', url: 'https://accounts.megaparts.bg' },
+  { id: 4, name: 'app.labcoin.bg', url: 'https://app.labcoin.bg' },
+  { id: 5, name: 'catering.ccc.bg', url: 'https://catering.ccc.bg' },
+  { id: 6, name: 'godzila.bg', url: 'https://godzila.bg' },
+  { id: 7, name: 'keybind.gg', url: 'https://keybind.gg' },
+  { id: 8, name: 'myflat.bg', url: 'https://myflat.bg' },
+];
+
 // Project filter categories
 const categories = ['All', 'React', 'JavaScript', 'TypeScript', 'Next.js', 'Tailwind CSS'];
 
@@ -161,6 +173,28 @@ const ProjectsSection = () => {
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        {/* Websites List Section */}
+        <div className="mt-20 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8">Websites I've Contributed To</h3>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 max-w-4xl mx-auto">
+            {websites.map((site) => (
+              <li key={site.id} className="text-center">
+                <a
+                  href={site.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg text-muted-foreground hover:text-primary hover:underline transition-colors"
+                >
+                  {site.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground max-w-3xl mx-auto mt-8 text-sm md:text-base">
+            In addition to these public-facing websites, I have developed numerous private CRM and client business management systems, focusing on tailored solutions to enhance operational efficiency and data management.
+          </p>
         </div>
       </div>
     </section>

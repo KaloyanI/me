@@ -6,29 +6,42 @@ import { cn } from '@/lib/utils';
 // Skill data organized by categories
 const skillsData = {
   "Frontend": [
-    { name: "React", level: 95, icon: "🔵" },
-    { name: "TypeScript", level: 90, icon: "🔷" },
-    { name: "Next.js", level: 85, icon: "⚫" },
-    { name: "Tailwind CSS", level: 95, icon: "🔵" },
-    { name: "Redux", level: 80, icon: "🟣" },
-    { name: "HTML/CSS", level: 95, icon: "🟠" },
-    { name: "JavaScript", level: 95, icon: "🟡" }
+    { name: "HTML5", level: 95, icon: "🔶" },
+    { name: "CSS", level: 90, icon: "🔷" },
+    { name: "Scss", level: 80, icon: "🔷" },
+    { name: "JavaScript", level: 92, icon: "🟡" },
+    { name: "jQuery", level: 88, icon: "🔵" },
+    { name: "React", level: 85, icon: "🔵" },
+    { name: "Tailwind CSS", level: 90, icon: "🔵" },
+    { name: "Website Optimization", level: 85, icon: "🚀" },
+    { name: "Debugging", level: 88, icon: "🔍" }
   ],
   "Backend": [
-    { name: "Node.js", level: 85, icon: "🟢" },
-    { name: "Express", level: 80, icon: "⚪" },
-    { name: "MongoDB", level: 75, icon: "🟢" },
-    { name: "PostgreSQL", level: 70, icon: "🔵" },
-    { name: "GraphQL", level: 65, icon: "🔴" },
-    { name: "Firebase", level: 80, icon: "🟡" }
+    { name: "PHP", level: 95, icon: "🐘" },
+    { name: "Laravel", level: 92, icon: "🔴" },
+    { name: "MySQL", level: 90, icon: "🐬" },
+    { name: "PostgreSQL", level: 90, icon: "🐬" },
+    { name: "MongoDB", level: 85, icon: "🍃" },
+    { name: "SQL Server", level: 80, icon: "🔵" },
+    { name: "Node.js", level: 75, icon: "🟢" },
+    { name: "WordPress", level: 88, icon: "🔤" },
+    { name: "Data Import/Export", level: 85, icon: "📊" },
+    { name: "Backend Integration", level: 87, icon: "🔄" }
   ],
-  "Tools": [
-    { name: "Git", level: 90, icon: "🟠" },
-    { name: "Docker", level: 70, icon: "🔵" },
-    { name: "AWS", level: 65, icon: "🟡" },
-    { name: "Jest", level: 75, icon: "🔴" },
-    { name: "Figma", level: 80, icon: "🟣" },
-    { name: "VS Code", level: 95, icon: "🔵" }
+  "DevOps / Workflow": [
+    { name: "Git / GitHub", level: 90, icon: "🐙" },
+    { name: "Full-Stack Development", level: 88, icon: "🔄" },
+    { name: "Project Management", level: 85, icon: "📋" },
+    { name: "Data Automation", level: 80, icon: "⚙️" },
+    { name: "DevOps", level: 78, icon: "🔧" },
+    { name: "Debugging", level: 90, icon: "🐞" },
+    { name: "Docker", level: 75, icon: "🐳" },
+    { name: "Figma", level: 80, icon: "🎨" },
+    { name: "DigitalOcean", level: 75, icon: "🐳" },
+    { name: "Redis", level: 75, icon: "🐳" },
+    { name: "ElasticSearch", level: 75, icon: "🐳" },
+    { name: "Cloudflare", level: 75, icon: "🐳" },
+    { name: "AI Master", level: 90, icon: "🤖" }
   ]
 };
 
@@ -39,7 +52,7 @@ const SkillsSection = () => {
   const [animatedSkills, setAnimatedSkills] = useState<Record<string, Set<number>>>({
     "Frontend": new Set(),
     "Backend": new Set(),
-    "Tools": new Set()
+    "DevOps / Workflow": new Set()
   });
   
   const sectionRef = useRef<HTMLElement>(null);
@@ -105,7 +118,7 @@ const SkillsSection = () => {
             <TabsList className="grid w-full grid-cols-3 mb-8">
               <TabsTrigger value="Frontend">Frontend</TabsTrigger>
               <TabsTrigger value="Backend">Backend</TabsTrigger>
-              <TabsTrigger value="Tools">Tools</TabsTrigger>
+              <TabsTrigger value="DevOps / Workflow">DevOps / Workflow</TabsTrigger>
             </TabsList>
             
             {Object.entries(skillsData).map(([category, skills]) => (
@@ -135,9 +148,9 @@ const SkillsSection = () => {
           <h3 className="text-xl font-medium mb-6">Technologies I've worked with</h3>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 opacity-70">
             {[
-              "Laravel", "Caching", "Redis", "Node.js", "Tailwind CSS", 
-              "MongoDB", "GraphQL", "React", "AWS",
-              "Docker", "GitHub", "Figma"
+              "Laravel", "PHP", "MySQL", "WordPress", "MongoDB", 
+              "React", "JavaScript", "jQuery", "HTML5", "CSS",
+              "Tailwind CSS", "TypeScript", "Git", "SCRUM", "Docker"
             ].map((tech) => (
               <div key={tech} className="px-4 py-2 bg-muted rounded-lg text-sm">
                 {tech}

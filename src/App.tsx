@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import SkillsSection from '@/components/SkillsSection';
+import CareerSection from '@/components/CareerSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
@@ -16,6 +17,7 @@ function App() {
           <HeroSection />
           <ProjectsSection />
           <SkillsSection />
+          <CareerSection />
           <ContactSection />
         </main>
         <Footer />
