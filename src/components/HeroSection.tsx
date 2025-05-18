@@ -64,7 +64,7 @@ const HeroSection = () => {
               onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/cv/ki_cv_resume.pdf';
-                link.download = 'aveKOKO_resume.pdf';
+                link.download = '/cv/ki_cv_resume.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
