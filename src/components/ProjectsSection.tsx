@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 // import { ExternalLink, Github, Calendar } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Loader2 } from 'lucide-react';
 
 // Sample project data
 const projects = [
@@ -162,11 +163,16 @@ const categories = ['All', 'PHP', 'Laravel', 'MySQL','React', 'JavaScript', 'jQu
 
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [loadedImages, setLoadedImages] = useState<number[]>([]);
   
   const filteredProjects = activeFilter === 'All' 
     ? projects 
     : projects.filter(project => project.tags.includes(activeFilter));
   
+  const handleImageLoaded = (projectId: number) => {
+    setLoadedImages(prev => [...prev, projectId]);
+  };
+
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -209,10 +215,19 @@ const ProjectsSection = () => {
                 className="overflow-hidden transition-all duration-300 hover:shadow-lg dark:shadow-primary/5 hover:translate-y-[-5px] cursor-pointer"
               >
                 <div className="relative h-48 overflow-hidden">
+                  {!loadedImages.includes(project.id) && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-muted/20">
+                      <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                    </div>
+                  )}
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    className={cn(
+                      "w-full h-full object-cover transition-transform duration-500 hover:scale-110",
+                      !loadedImages.includes(project.id) && "opacity-0"
+                    )}
+                    onLoad={() => handleImageLoaded(project.id)}
                   />
                 </div>
                 <CardHeader>
