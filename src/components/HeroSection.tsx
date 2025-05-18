@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = 'Full Stack Developer';
+  const fullText = 'Full Stack Developer & Software Engineer';
   
   useEffect(() => {
     if (typedText.length < fullText.length) {
@@ -40,10 +40,10 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">
-            I'm a <span className="text-secondary relative">
+            I'm a <span className="relative">
               {typedText}
               <span className={cn(
-                "inline-block w-0.5 h-6 ml-1 bg-secondary align-text-bottom",
+                "inline-block w-0.5 h-6 ml-1 align-text-bottom",
                 typedText.length === fullText.length ? "animate-pulse" : "animate-blink"
               )} />
             </span>
@@ -58,7 +58,18 @@ const HeroSection = () => {
             <Button size="lg">
               View Projects
             </Button>
-            <Button size="lg" variant="outline">
+            <Button 
+              size="lg" 
+              variant="outline"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/cv/resume.pdf';
+                link.download = 'aveKOKO_resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
               Download Resume
             </Button>
           </div>
