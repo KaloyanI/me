@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <div className="flex items-center gap-2 text-xl font-bold mb-4">
               <Code2 className="h-6 w-6 text-primary" />
-              <span>DevPortfolio</span>
+              <span>aveKOKO</span>
             </div>
             <p className="text-muted-foreground max-w-md">
               A passionate frontend developer crafting beautiful and functional web experiences.

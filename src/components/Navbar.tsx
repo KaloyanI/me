@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2 text-xl font-bold">
           <Code2 className="h-6 w-6 text-primary" />
-          <span className="hidden sm:inline">DevPortfolio</span>
+          <span className="hidden sm:inline">aveKOKO</span>
         </a>
 
         {/* Desktop navigation */}
